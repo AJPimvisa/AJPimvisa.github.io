@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cff</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     
+</head>
+<body>
+    <!-- navbar -->
+    <section class="header">
+      <header>
+         <div class="container">
+             <nav>
+                 <div class="logo">My website</div>
+                 <ul class="nav-list">
+                     <li><a href="#">หน้าแรก</a></li>
+                     <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">สินค้า</a>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">เมล็ดกาแฟ</a></li>
+                        <li><a class="dropdown-item" href="#">ขนมปัง</a></li>
+                        <li><a class="dropdown-item" href="#">เค้ก</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">ชา</a></li>
+                      </ul>
+                     <li><a href="#Service">บริการ</a></li>
+                     <li><a href="#About">เกี่ยวกับเรา</a></li>
+                 </ul>
+             </nav>
+         </div>
+      </header>
+     </section>
+     <br>
+
+    <!-- tab -->
+  
+    <div class="d-flex-a align-items-start">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="a-tab" data-bs-toggle="tab" data-bs-target="#a" type="button" role="tab" aria-controls="a" aria-selected="true">A</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="b-tab" data-bs-toggle="tab" data-bs-target="#b" type="button" role="tab" aria-controls="b" aria-selected="false">B</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="c-tab" data-bs-toggle="tab" data-bs-target="#c" type="button" role="tab" aria-controls="c" aria-selected="false">C</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="d-tab" data-bs-toggle="tab" data-bs-target="#d" type="button" role="tab" aria-controls="d" aria-selected="false">D</button>
+      </li>
+    </ul>
+    
+    <div class="tab-content" id="TabContent">
+      <div class="tab-pane fade show active" id="a" role="tabpanel" aria-labelledby="a-tab">A. Lorem ipsum dolor sit amet.</div>
+      <div class="tab-pane fade" id="b" role="tabpanel" aria-labelledby="b-tab"> B. Lorem ipsum dolor sit amet consectetur.</div>
+      <div class="tab-pane fade" id="c" role="tabpanel" aria-labelledby="c-tab">C. Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+      <div class="tab-pane fade" id="d" role="tabpanel" aria-labelledby="d-tab">D. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    
+  </div>
+  <br>
+    <!-- pills -->
+    
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills" id="v-pills" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="a-tab" data-bs-toggle="pill" data-bs-target="#v-pills-a" type="button" role="tab" aria-controls="v-pills-a" aria-selected="true">Button A</button>
+        <button class="nav-link" id="b-tab" data-bs-toggle="pill" data-bs-target="#v-pills-b" type="button" role="tab" aria-controls="v-pills-b" aria-selected="false">Button B</button>
+        <button class="nav-link" id="cc-tab" data-bs-toggle="pill" data-bs-target="#v-pills-c" type="button" role="tab" aria-controls="v-pills-c" aria-selected="false">Button C</button>
+        <button class="nav-link" id="d-tab" data-bs-toggle="pill" data-bs-target="#v-pills-d" type="button" role="tab" aria-controls="v-pills-d" aria-selected="false">Button D</button>
+      </div>
+
+      
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-a" role="tabpanel" aria-labelledby="v-pills-a-tab">A. Lorem ipsum dolor sit amet. </div>
+        <div class="tab-pane fade" id="v-pills-b" role="tabpanel" aria-labelledby="v-pills-b-tab">B. Lorem ipsum dolor sit amet consectetur.</div>
+        <div class="tab-pane fade" id="v-pills-c" role="tabpanel" aria-labelledby="v-pills-c-tab">C. Lorem, ipsum dolor sit amet consectetur adipisicing.</div>
+        <div class="tab-pane fade" id="v-pills-d" role="tabpanel" aria-labelledby="v-pills-d-tab">D. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+      </div>
+    </div>
+  
+    
+</body>
+</html>

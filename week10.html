@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <section class="header">
+      <header>
+         <div class="container">
+             <nav>
+                 <div class="logo">My website</div>
+                 <ul class="nav-list">
+                     <li><a href="#">หน้าแรก</a></li>
+                     
+                     <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">สินค้า</a>
+                     <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">เมล็ดกาแฟ</a></li>
+                      <li><a class="dropdown-item" href="#">ขนมปัง</a></li>
+                      <li><a class="dropdown-item" href="#">เค้ก</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">ชา</a></li>
+                    </ul>
+                     <li><a href="#Service">บริการ</a></li>
+
+                     <li><a href="#About">เกี่ยวกับเรา</a></li>
+                 </ul>
+             </nav>
+         </div>
+      </header>
+     </section>
+    <!-- ตัวอย่างด้านบนจะสร้างคอลัมน์ที่มีความกว้างเท่ากันสามคอลัมน์
+     ในทุกอุปกรณ์และช่องมองภาพโดยใช้คลาสกริดที่กำหนดไว้ล่วงหน้า 
+     คอลัมน์เหล่านี้จะอยู่ตรงกลางของหน้าโดยมี.container. เป็นพาเรนต์ -->
+    <div class="container">
+      <div class="row">
+        <div class="col bg-info">
+          รหัส
+        </div>
+        <div class="col bg-info">
+          ชื่อ
+        </div>
+        <div class="col bg-info">
+          นามสกุล
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Equal-width
+      ตัวอย่างเช่น ต่อไปนี้คือเค้าโครงกริดสองแบบที่ใช้ได้กับทุกอุปกรณ์และช่องมองภาพ 
+      ตั้งแต่ ถึงxsเพิ่มxxlคลาสที่ไม่มีหน่วยจำนวนเท่าใดก็ได้สำหรับแต่ละจุดพักที่คุณต้องการ
+      และคอลัมน์แต่ละคอลัมน์จะมีความกว้างเท่ากัน-->
+    <div class="container">
+      <div class="row">
+        <div class="col bg-success">
+          ชื่อ
+        </div>
+        <div class="col bg-success">
+          นามสกุล
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-primary">
+          รหัส
+        </div>
+        <div class="col bg-primary">
+          ชื่อ
+        </div>
+        <div class="col bg-primary">
+          นามสกุล
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Setting one column width
+    การจัดเค้าโครงอัตโนมัติสำหรับคอลัมน์กริด Flexbox 
+    ยังหมายถึงคุณสามารถกำหนดความกว้างของคอลัมน์หนึ่งและให้คอลัมน์ที่เกี่ยวข้องปรับขนาดรอบ ๆ คอลัมน์นั้นโดยอัตโนมัติ
+     คุณสามารถใช้คลาสกริดที่กำหนดไว้ล่วงหน้า (ดังแสดงด้านล่าง) มิกซ์อินกริด หรือความกว้างแบบอินไลน์ 
+    โปรดทราบว่าคอลัมน์อื่น ๆ จะปรับขนาดไม่ว่าคอลัมน์ตรงกลางจะมีความกว้างเท่าใดก็ตาม  -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col bg-success">
+          รหัส
+        </div>
+        <div class="col-6 bg-danger">
+          ชื่อ
+        </div>
+        <div class="col bg-success">
+          นามสกุล (wider)
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-success">
+          รหัส
+        </div>
+        <div class="col-5 bg-danger">
+          ชื่อ (wider)
+        </div>
+        <div class="col bg-success">
+          นามสกุล
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Variable width content 
+    ใช้col-{breakpoint}-autoคลาสเพื่อกำหนดขนาดของคอลัมน์ตามความกว้างตามธรรมชาติของเนื้อหา-->
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col col-lg-2 bg-warning">
+          ชื่อ
+        </div>
+        <div class="col-md-auto bg-danger">
+          Variable width content
+        </div>
+        <div class="col col-lg-2 bg-warning">
+          นามสกุล
+        </div>
+      </div>
+      <div class="row">
+        <div class="col bg-info">
+          ชื่อ
+        </div>
+        <div class="col-md-auto bg-danger">
+          Variable width content
+        </div>
+        <div class="col col-lg-2 bg-primary">
+          นามสกุล
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-content-center">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col-sm-6 bg-warning ">
+          <div class="card" style="width: 18rem;">
+            <img src="picture/koi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 bg-warning">
+          <div class="card" style="width: 18rem;">
+            <img src="picture/koi.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="flex justify-content-center">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item ">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container justify-content-center">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">aaaaa.</div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">.bbbb.</div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">.cccc</div>
+  </div>
+</div>
+  </body>
+</html>
